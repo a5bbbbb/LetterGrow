@@ -103,23 +103,23 @@ class LetterGrow:
         self._cur_ord += 1
 
 
+if __name__ == '__main__':
+    
+    p = "Zhannur is now free from a girlfriend"
 
-            
-p = "Zhannur is now free from a girlfriend"
+    # best from 0.001 to 0.09
+    comb_delay = 0.001
 
-# best from 0.001 to 0.09
-comb_delay = 0.001
-
-a = LetterGrow(p)
+    a = LetterGrow(p)
 
 
-a.shuffle_vocab()
+    a.shuffle_vocab()
 
-for i in a:
+    for i in a:
 
-    print(i)
+        print(i)
 
-    time.sleep(comb_delay)
+        time.sleep(comb_delay)
         
 
 
